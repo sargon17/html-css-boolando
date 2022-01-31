@@ -82,7 +82,6 @@ img {
 
 .card:hover .hover-img {
   visibility: visible;
-  transition: 2s;
 }
 .card:hover .heart-icon {
   color: var(--red-tag);
