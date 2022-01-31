@@ -1,0 +1,123 @@
+* {
+  font-family: "Montserrat", "Garamond", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+:root {
+  --debug-border: 3px dotted #bbbbbb;
+  --red-tag: #eb0037;
+  --green-tag: #00875a;
+  --red-text: #ff0000;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reusable Styles */
+.inline-block {
+  display: inline-block;
+}
+/* Reusable Styles */
+
+/* Reusable Components */
+.tag {
+  font-size: 8px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0.1em 0.3em;
+  margin-right: 3px;
+}
+.discount-tag {
+  background: var(--red-tag);
+}
+.eco-tag {
+  background: var(--green-tag);
+}
+.heart-icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 14px;
+  background: #fff;
+  padding: 0.2em 0.5em;
+}
+/* Reusable Components */
+
+main {
+  margin: auto;
+  font-size: 0px;
+}
+.card {
+  display: inline-block;
+  width: 300px;
+  margin: 5px;
+}
+
+/* image & tags */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+}
+
+.tags {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0;
+}
+
+.hover-img {
+  visibility: hidden;
+}
+
+.card:hover .hover-img {
+  visibility: visible;
+  transition: 2s;
+}
+.card:hover .heart-icon {
+  color: var(--red-tag);
+  transition: 0.15s ease-out;
+}
+
+/* description */
+.description {
+  padding: 10px 0;
+}
+.description h3 {
+  color: #000;
+  font-size: 10px;
+  font-weight: 400;
+}
+.description h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.price {
+  color: var(--red-text);
+  font-size: 10px;
+  font-weight: 700;
+}
+.old-price {
+  color: #000;
+  font-size: 9px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+/* .debug main{
+    border: var(--debug-border);
+}
+.debug .card{
+    border: var(--debug-border);
+} */
